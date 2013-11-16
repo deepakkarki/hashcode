@@ -114,6 +114,7 @@ public class IoTABox
 	{
 		//have our own delimiter --- problem much?
 		//or fixed 8 bits!! or 16 bits ;)
+		//blocking call
 		return '0';
 	}
 	
