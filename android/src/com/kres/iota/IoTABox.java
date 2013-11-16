@@ -58,6 +58,8 @@ public class IoTABox
 	        connected = true;
 	        dev_out = sock.getOutputStream();
 	        dev_in = sock.getInputStream();
+	        write(0);
+	        write(0);
 		}
 		catch(Exception e)
 		{
@@ -122,6 +124,8 @@ public class IoTABox
 	{
 		try
 		{
+			write(255);
+			write(255);
 	        dev_out.close();
 	        dev_in.close();
 	        sock.close();
