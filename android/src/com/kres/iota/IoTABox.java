@@ -91,9 +91,14 @@ public class IoTABox
 		write(data);
 	}
 	
-	public char analogRead(int pin)
+	public int analogRead(int pin)
 	{
-		return '0';
+		int analogMask = 1 << 6; //bit 0100-pin
+		int meta = analogMask | (pin);
+		write(meta);
+		write(0);
+		int data = read();
+		return data;
 	}
 	
 	public boolean isConnected()
@@ -112,12 +117,19 @@ public class IoTABox
 			
 		}
 	}
-	private char read()
+	private int read()
 	{
-		//have our own delimiter --- problem much?
-		//or fixed 8 bits!! or 16 bits ;)
+		//fixed 8 bits expected 
 		//blocking call
-		return '0';
+		try{
+			while(dev_in.available()==0);
+			return dev_in.read();
+		}
+		catch(Exception e)
+		{
+			
+		}
+		return -1;
 	}
 	
 	public void close()

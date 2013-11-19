@@ -38,8 +38,8 @@ int gpio_read(int pin,int data) //data is always 0 for read
 
 int analog_read(int pin, int data)//data is always 0
 {
-  return analogRead(pin);
- //instead have serial.write(sensorvalue) 
+  int senVal =  analogRead(pin);
+  Serial.write(senVal) ;
 }
 
 int defaultx(int pin, int data)// they params dont matter
@@ -58,7 +58,7 @@ void setup()
   f[1] = gpio_write;
   f[2] = analog_write;
   f[3] = gpio_read;
-  f[4] = gpio_write;
+  f[4] = analog_read;
 }
 
 void loop() 
