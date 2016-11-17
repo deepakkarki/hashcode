@@ -1,9 +1,7 @@
-IoTA - Internet of Things : Android
-
+#IoTA - Internet of Things : Android
 This is our Hardware-Mobile App entery for the 24 hour hackathon "#Code-2013"
-Below is our abstract for our 
 
-Abstract: 
+##Abstract
 
 Gecko, Jawbone, Nike+, Smart Brush, Lynx, NFC Rings, NinjaBlocks. 
 
@@ -15,7 +13,7 @@ The hack is to develop a hardware framework for Android that allows people to ra
 
 
 
-Description:
+##Description
 
 
 We propose to build our IoTA box (+ an Android SDK for the same) during the hackathon. Think of the IoTA box as a hardware extension of the Android phone. The box is something to which you can add sensors and actuators and make everything work using our SDK, just as if it were a part of the phone. 
