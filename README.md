@@ -23,11 +23,11 @@ The IoTA box will be bluetooth-enabled and powered by a ATmega 8bit MCU. As an e
 
 
 
-Technical Aspects:
+##Technical Aspects
 
 
 The project consists of three main parts:
  
-IoTA box Hardware : Building our own hardware board, from scratch. For tha hackathon it will be on a bread board, powered by an ATmega 8bit MCU. 
-IoTA Box Firmware : Writing a bluetooth bootloader, and custom protocol handling.
-IoTA  Android API : Packaging a API to interface with the box based on our custom protocol.
+* IoTA box Hardware : Building our own hardware board, from scratch. For tha hackathon it will be on a bread board, powered by an ATmega 8bit MCU. 
+* IoTA Box Firmware : Writing a bluetooth bootloader, and custom protocol handling.
+* IoTA  Android API : Packaging a API to interface with the box based on our custom protocol.
